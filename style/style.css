@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  .container-full-height {
+    height: 100vh; /* Tarayıcı penceresinin tam yüksekliğine uyum sağlar */
+  }
+  .row-full-height {
+    height: 100%; /* Row'un tam yüksekliğini belirler */
+  }
+  .row-full-height {
+    height: 100%; /* Sütunun tam yüksekliğini belirler */
+    display: flex;
+    align-items:center; /* İçeriği dikeyde ortalar */
+    justify-content: center; /* İçeriği yatayda ortalar */
+  }
+  /* İçeriğin boyut ve özelliklerini ayarlayabilirsiniz */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  form {
+    width: 80%;
+    max-width: 400px;
+    margin-top: 24px;
+  }
+  .col-full-height-table {
+    height: 100%; /* Sütunun tam yüksekliğini belirler */
+    display: flex;
+    align-items:center; /* İçeriği dikeyde ortalar */
+    justify-content: center; /* İçeriği yatayda ortalar */
+
+  }
+  table{
+    margin-top: 12px;  
+    
+  }
+  /* Temel stiller */
+.custom-select {
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.custom-select select {
+  display: none; /* Varsayılan seçim kutusunu gizler */
+}
+
+/* Yeni stiller */
+.custom-select:before {
+  content: '\25BC'; /* Aşağı ok simgesi */
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #f1f1f1;
+  color: #888;
+  pointer-events: none; /* Örtüşmeyi önlemek için */
+}
+
+.custom-select select {
+  appearance: none; /* Tarayıcı tarafından varsayılan stilleri kaldırır */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Seçilen öğenin stilleri */
+.custom-select select:focus {
+  outline: none;
+}
+
+/* Yeni stiller */
+.custom-select select::-ms-expand {
+  display: none; /* IE için aşağı oku gizler */
+}
